@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-04-18T11:47:04-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">SReachTools</title><subtitle>SReachTools: A MATLAB toolbox for stochastic reachability</subtitle><entry><title type="html">Using SReachTools on CodeOcean</title><link href="http://localhost:4000/repeatability/2019/04/07/SReachTools-and-codeocean.html" rel="alternate" type="text/html" title="Using SReachTools on CodeOcean" /><published>2019-04-07T10:00:00-04:00</published><updated>2019-04-07T10:00:00-04:00</updated><id>http://localhost:4000/repeatability/2019/04/07/SReachTools-and-codeocean</id><content type="html" xml:base="http://localhost:4000/repeatability/2019/04/07/SReachTools-and-codeocean.html">&lt;p&gt;CodeOcean is a  cloud-based computational reproducibility platform. This post
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-04-18T12:07:06-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">SReachTools</title><subtitle>SReachTools: A MATLAB toolbox for stochastic reachability</subtitle><entry><title type="html">Using SReachTools on CodeOcean</title><link href="http://localhost:4000/repeatability/2019/04/07/SReachTools-and-codeocean.html" rel="alternate" type="text/html" title="Using SReachTools on CodeOcean" /><published>2019-04-07T10:00:00-04:00</published><updated>2019-04-07T10:00:00-04:00</updated><id>http://localhost:4000/repeatability/2019/04/07/SReachTools-and-codeocean</id><content type="html" xml:base="http://localhost:4000/repeatability/2019/04/07/SReachTools-and-codeocean.html">&lt;p&gt;CodeOcean is a  cloud-based computational reproducibility platform. This post
 shows how you can utilize SReachTools in your CodeOcean capsule for
 repeatability. We list few examples that show SReachTools setup for CodeOcean.
 Then, we detail the procedure to set up a new capsule.&lt;/p&gt;
@@ -93,7 +93,7 @@ and &lt;code class=&quot;highlighter-rouge&quot;&gt;make&lt;/code&gt;)&lt;/li&gt
  &lt;span class=&quot;c&quot;&gt;#&lt;/span&gt;
  &lt;span class=&quot;c&quot;&gt;## OPTION 2: Fetch nightly&lt;/span&gt;
  &lt;span class=&quot;c&quot;&gt;#&lt;/span&gt;
- curl &lt;span class=&quot;nt&quot;&gt;-sL&lt;/span&gt; https://github.com/unm-hscl/SReachTools/archive/master.zip &lt;span class=&quot;nt&quot;&gt;--output&lt;/span&gt; SReachTools.zip
+ curl &lt;span class=&quot;nt&quot;&gt;-sL&lt;/span&gt; https://github.com/sreachtools/SReachTools/archive/master.zip &lt;span class=&quot;nt&quot;&gt;--output&lt;/span&gt; SReachTools.zip
  &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Downloaded SReachTools (nightly)'&lt;/span&gt;
  unzip &lt;span class=&quot;nt&quot;&gt;-qq&lt;/span&gt; SReachTools.zip
  &lt;span class=&quot;nb&quot;&gt;mv &lt;/span&gt;SReachTools-master SReachTools
@@ -257,7 +257,7 @@ a random vector lies in a polytope with a desired probability&lt;/li&gt;
 trajectories (potentially from a Monte-Carlo simulation)&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Joseph D. Gleason &amp; Abraham P. Vinod</name></author><summary type="html">We’ve added a lot of new features to SReachTools over the past few months in preparation for its public submission and debut at the 2019, International Conference on Hybrid Systems: Computation and Control, coming up this April.</summary></entry><entry><title type="html">Release of v1 (Stable)</title><link href="http://localhost:4000/jekyll/update/2018/10/22/release-of-v1.html" rel="alternate" type="text/html" title="Release of v1 (Stable)" /><published>2018-10-22T21:27:00-04:00</published><updated>2018-10-22T21:27:00-04:00</updated><id>http://localhost:4000/jekyll/update/2018/10/22/release-of-v1</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2018/10/22/release-of-v1.html">&lt;p&gt;SReachTools Toolbox &lt;a href=&quot;https://github.com/unm-hscl/SReachTools/tree/v1.0.0&quot;&gt;v1&lt;/a&gt; is
+&lt;/ul&gt;</content><author><name>Joseph D. Gleason &amp; Abraham P. Vinod</name></author><summary type="html">We’ve added a lot of new features to SReachTools over the past few months in preparation for its public submission and debut at the 2019, International Conference on Hybrid Systems: Computation and Control, coming up this April.</summary></entry><entry><title type="html">Release of v1 (Stable)</title><link href="http://localhost:4000/jekyll/update/2018/10/22/release-of-v1.html" rel="alternate" type="text/html" title="Release of v1 (Stable)" /><published>2018-10-22T21:27:00-04:00</published><updated>2018-10-22T21:27:00-04:00</updated><id>http://localhost:4000/jekyll/update/2018/10/22/release-of-v1</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2018/10/22/release-of-v1.html">&lt;p&gt;SReachTools Toolbox &lt;a href=&quot;https://github.com/sreachtools/SReachTools/tree/v1.0.0&quot;&gt;v1&lt;/a&gt; is
 now out!&lt;/p&gt;
 
 &lt;div class=&quot;important-note&quot; role=&quot;alert&quot;&gt;
@@ -290,7 +290,7 @@ affine controller synthesis&lt;/li&gt;
 &lt;p&gt;We have submitted a tool paper describing the features of SReachTools to the
 &lt;em&gt;22nd ACM International Conference on Hybrid Systems: Computation and Control
 summarizing the features of SReachTools&lt;/em&gt;. A copy of this submission is
-&lt;a href=&quot;https://github.com/unm-hscl/SReachTools/raw/master/SReachTools.pdf&quot;&gt;available in the
+&lt;a href=&quot;https://github.com/sreachtools/SReachTools/raw/master/SReachTools.pdf&quot;&gt;available in the
 repository&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;See the quick-start guide below for installation instructions.&lt;/p&gt;
@@ -299,15 +299,15 @@ repository&lt;/a&gt;.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Updated License to GNU GPLv3, or (at your option) a later version.
-See &lt;a href=&quot;https://unm-hscl.github.io/SReachTools/license/&quot;&gt;LICENSE&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;A complete overhaul of the APIs. For more details, see our &lt;a href=&quot;https://github.com/unm-hscl/SReachTools/raw/master/SReachTools.pdf&quot;&gt;submitted tool
+See &lt;a href=&quot;/license&quot;&gt;LICENSE&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;A complete overhaul of the APIs. For more details, see our &lt;a href=&quot;https://github.com/sreachtools/SReachTools/raw/master/SReachTools.pdf&quot;&gt;submitted tool
 paper&lt;/a&gt;.&lt;/li&gt;
   &lt;li&gt;All promises made in our previous &lt;a href=&quot;./2018-05-31-release-of-v0x2.md&quot;&gt;blog post&lt;/a&gt;
 have been met:
     &lt;ul&gt;
       &lt;li&gt;Extension to LTV systems&lt;/li&gt;
       &lt;li&gt;Support for chance-constrained and particle filter-based verification&lt;/li&gt;
-      &lt;li&gt;Added online API documentation. See &lt;a href=&quot;https://unm-hscl.github.io/SReachTools/docs/index.html&quot;&gt;online documentation&lt;/a&gt;.&lt;/li&gt;
+      &lt;li&gt;Added online API documentation. See &lt;a href=&quot;/docs/index.html&quot;&gt;online documentation&lt;/a&gt;.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;Affine control synthesis technique based on chance constraints and difference
@@ -359,7 +359,7 @@ for more details. Note that Gurobi offers free academic license.&lt;/li&gt;
 &lt;ol&gt;
   &lt;li&gt;Install the necessary dependencies listed above&lt;/li&gt;
   &lt;li&gt;Clone the SReachTools repository (or download the latest zip file from
-&lt;a href=&quot;https://github.com/unm-hscl/SReachTools/releases&quot;&gt;Releases&lt;/a&gt;)&lt;/li&gt;
+&lt;a href=&quot;https://github.com/sreachtools/SReachTools/releases&quot;&gt;Releases&lt;/a&gt;)&lt;/li&gt;
   &lt;li&gt;Change the MATLAB current working directory to where SReachTools was
 downloaded&lt;/li&gt;
   &lt;li&gt;Run &lt;code class=&quot;highlighter-rouge&quot;&gt;srtinit&lt;/code&gt; in MATLAB to add the toolbox to the paths and ensure all
@@ -378,7 +378,7 @@ after use.&lt;/li&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ol&gt;</content><author><name>Abraham P. Vinod  &amp; Joseph D. Gleason</name></author><summary type="html">SReachTools Toolbox v1 is now out!</summary></entry><entry><title type="html">Release of v0.2</title><link href="http://localhost:4000/jekyll/update/2018/05/31/release-of-v0x2.html" rel="alternate" type="text/html" title="Release of v0.2" /><published>2018-05-31T15:40:00-04:00</published><updated>2018-05-31T15:40:00-04:00</updated><id>http://localhost:4000/jekyll/update/2018/05/31/release-of-v0x2</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2018/05/31/release-of-v0x2.html">&lt;p&gt;SReachTools Toolbox &lt;a href=&quot;https://github.com/unm-hscl/SReachTools/tree/v0.2&quot;&gt;v0.2&lt;/a&gt; is now out! The SReachTools toolbox is a set of MATLAB codes to facilitate stochastic reachability computations. The toolbox currently supports reachability computations with several methods:&lt;/p&gt;
+&lt;/ol&gt;</content><author><name>Abraham P. Vinod  &amp; Joseph D. Gleason</name></author><summary type="html">SReachTools Toolbox v1 is now out!</summary></entry><entry><title type="html">Release of v0.2</title><link href="http://localhost:4000/jekyll/update/2018/05/31/release-of-v0x2.html" rel="alternate" type="text/html" title="Release of v0.2" /><published>2018-05-31T15:40:00-04:00</published><updated>2018-05-31T15:40:00-04:00</updated><id>http://localhost:4000/jekyll/update/2018/05/31/release-of-v0x2</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2018/05/31/release-of-v0x2.html">&lt;p&gt;SReachTools Toolbox &lt;a href=&quot;https://github.com/sreachtools/SReachTools/tree/v0.2&quot;&gt;v0.2&lt;/a&gt; is now out! The SReachTools toolbox is a set of MATLAB codes to facilitate stochastic reachability computations. The toolbox currently supports reachability computations with several methods:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;Dynamic programming computation&lt;/li&gt;
   &lt;li&gt;Fourier transformation approximations&lt;/li&gt;
@@ -429,7 +429,7 @@ This will disable some of the features of SReachTools.&lt;/p&gt;
 
 &lt;h3 id=&quot;examples&quot;&gt;Examples&lt;/h3&gt;
 
-&lt;p&gt;See our &lt;a href=&quot;https://unm-hscl.github.io/SReachTools/examples/&quot;&gt;examples page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;See our &lt;a href=&quot;/examples&quot;&gt;examples page&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;what-are-we-working-on-next&quot;&gt;What are we working on next?&lt;/h2&gt;
 
@@ -437,8 +437,8 @@ This will disable some of the features of SReachTools.&lt;/p&gt;
   &lt;li&gt;Extension to LTV systems&lt;/li&gt;
   &lt;li&gt;Support for chance-constrained and particle filter-based verification&lt;/li&gt;
   &lt;li&gt;Adding online API documentation&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Joseph D. Gleason &amp; Abraham P. Vinod</name></author><summary type="html">SReachTools Toolbox v0.2 is now out! The SReachTools toolbox is a set of MATLAB codes to facilitate stochastic reachability computations. The toolbox currently supports reachability computations with several methods: Dynamic programming computation Fourier transformation approximations Lagrangian (set-based) approximations We currently support forward and backward stochastic reachability of stochastic LTI systems.</summary></entry><entry><title type="html">Release of v0.1</title><link href="http://localhost:4000/jekyll/update/2018/05/25/release-of-v0x1.html" rel="alternate" type="text/html" title="Release of v0.1" /><published>2018-05-25T15:34:00-04:00</published><updated>2018-05-25T15:34:00-04:00</updated><id>http://localhost:4000/jekyll/update/2018/05/25/release-of-v0x1</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2018/05/25/release-of-v0x1.html">&lt;p&gt;We have released the first public version of the SReachTools (Stochastic Reachability Tools) Toolbox! The codes and functionality of &lt;a href=&quot;https://github.com/unm-hscl/SReachTools/tree/v0.1-alpha&quot;&gt;v0.1&lt;/a&gt; have been tested internally by us, but we do expect bugs to be present.&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>Joseph D. Gleason &amp; Abraham P. Vinod</name></author><summary type="html">SReachTools Toolbox v0.2 is now out! The SReachTools toolbox is a set of MATLAB codes to facilitate stochastic reachability computations. The toolbox currently supports reachability computations with several methods: Dynamic programming computation Fourier transformation approximations Lagrangian (set-based) approximations We currently support forward and backward stochastic reachability of stochastic LTI systems.</summary></entry><entry><title type="html">Release of v0.1</title><link href="http://localhost:4000/jekyll/update/2018/05/25/release-of-v0x1.html" rel="alternate" type="text/html" title="Release of v0.1" /><published>2018-05-25T15:34:00-04:00</published><updated>2018-05-25T15:34:00-04:00</updated><id>http://localhost:4000/jekyll/update/2018/05/25/release-of-v0x1</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2018/05/25/release-of-v0x1.html">&lt;p&gt;We have released the first public version of the SReachTools (Stochastic Reachability Tools) Toolbox! The codes and functionality of &lt;a href=&quot;https://github.com/sreachtools/SReachTools/tree/v0.1-alpha&quot;&gt;v0.1&lt;/a&gt; have been tested internally by us, but we do expect bugs to be present.&lt;/p&gt;
 
-&lt;p&gt;Please help us out: if you use the code and find a bug, create an &lt;a href=&quot;https://github.com/unm-hscl/SReachTools/issues&quot;&gt;issue&lt;/a&gt; so we know what needs to be fixed. If you would like to fix the bug yourself, please check out our &lt;a href=&quot;/contributing&quot;&gt;contributing&lt;/a&gt; page.&lt;/p&gt;
+&lt;p&gt;Please help us out: if you use the code and find a bug, create an &lt;a href=&quot;https://github.com/sreachtools/SReachTools/issues&quot;&gt;issue&lt;/a&gt; so we know what needs to be fixed. If you would like to fix the bug yourself, please check out our &lt;a href=&quot;/contributing&quot;&gt;contributing&lt;/a&gt; page.&lt;/p&gt;
 
 &lt;p&gt;We will continue to make changes to the code over the next month in preparation for the v1 release (expected in late July/early August).&lt;/p&gt;</content><author><name>Joseph D. Gleason &amp; Abraham P. Vinod</name></author><summary type="html">We have released the first public version of the SReachTools (Stochastic Reachability Tools) Toolbox! The codes and functionality of v0.1 have been tested internally by us, but we do expect bugs to be present.</summary></entry></feed>
