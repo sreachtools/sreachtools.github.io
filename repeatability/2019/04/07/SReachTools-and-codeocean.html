@@ -99,14 +99,10 @@ and <code class="highlighter-rouge">make</code>)</li>
     </ol>
   </li>
   <li>Next, copy the following text into <code class="highlighter-rouge">post-install script</code> section:
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="c">#!/usr/bin/env bash</span>
-    
- <span class="c"># tells script to exit, if any line in the script fails (CodeOcean default)</span>
- <span class="nb">set</span> <span class="nt">-e</span>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="c">#!/bin/bash</span>
     
  <span class="c">### Install GMP</span>
- <span class="c"># Requires packages build-essentials for gcc and make, and package m4 (don't</span>
- <span class="c"># really know why)</span>
+ <span class="c"># Requires packages build-essentials for gcc and make, and package m4 (don't know why)</span>
  curl <span class="nt">-sL</span> https://gmplib.org/download/gmp/gmp-6.1.2.tar.bz2 | <span class="nb">tar </span>xj
  <span class="nb">echo</span> <span class="s1">'Downloaded GMP'</span>
  <span class="nb">cd </span>gmp-6.1.2
@@ -149,21 +145,23 @@ and <code class="highlighter-rouge">make</code>)</li>
  <span class="c"># Call srtinit in MATLAB to complete the setup</span>
  <span class="c">## OPTION 1: Fetch a tagged release</span>
  <span class="c">#</span>
- <span class="c"># SREACHTOOLS_RELEASE=1.1</span>
- <span class="c"># curl -sL https://abyvinod.github.io/code/SReachTools-v$SREACHTOOLS_RELEASE.tar.gz | tar xz</span>
- <span class="c"># echo 'Downloaded SReachTools (stable)'</span>
- <span class="c"># mv SReachTools-$SReachTools SReachTools</span>
- <span class="c">#</span>
- <span class="c">## OPTION 2: Fetch nightly</span>
- <span class="c">#</span>
- curl <span class="nt">-sL</span> https://github.com/sreachtools/SReachTools/archive/master.zip <span class="nt">--output</span> SReachTools.zip
- <span class="nb">echo</span> <span class="s1">'Downloaded SReachTools (nightly)'</span>
+ <span class="nv">SREACHTOOLS_RELEASE</span><span class="o">=</span>1.2
+ curl <span class="nt">-sL</span> https://github.com/unm-hscl/SReachTools/archive/v<span class="nv">$SREACHTOOLS_RELEASE</span>.zip <span class="nt">--output</span> SReachTools.zip
  unzip <span class="nt">-qq</span> SReachTools.zip
- <span class="nb">mv </span>SReachTools-master SReachTools
+ <span class="nb">mv </span>SReachTools-<span class="nv">$SREACHTOOLS_RELEASE</span> SReachTools
  <span class="nb">rm </span>SReachTools.zip
+ <span class="nb">echo</span> <span class="s1">'Downloaded SReachTools'</span>
+ <span class="c">#</span>
+ <span class="c"># ## OPTION 2: Fetch bleeding edge</span>
+ <span class="c">#</span>
+ <span class="c"># curl -sL https://github.com/unm-hscl/SReachTools/archive/master.zip --output SReachTools.zip</span>
+ <span class="c"># unzip -qq SReachTools.zip</span>
+ <span class="c"># mv SReachTools-master SReachTools</span>
+ <span class="c"># rm SReachTools.zip</span>
+ <span class="c"># echo 'Downloaded SReachTools'</span>
     
  <span class="c">### Setup MATLAB env for GeoCalcLib, YALMIP, CVX, MPT3, and SReachTools</span>
- <span class="c"># Trailing \ implies newline in bash. MATLAB executes the commands in the quotes</span>
+ <span class="c"># Trailing \ implies newline in bash. MATLAB executes the commands in the quotes.</span>
  <span class="c"># Make sure each line ends with ;\ to avoid MATLAB throwing errors</span>
  <span class="c"># Use GPLK instead of LCP to avoid wierd shifting | Don't do mpt_init again</span>
  <span class="c"># 1. Add GeoCalcLib to path</span>

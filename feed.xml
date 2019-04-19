@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-04-19T00:53:37-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">SReachTools</title><subtitle>SReachTools: A MATLAB toolbox for stochastic reachability</subtitle><entry><title type="html">Using SReachTools on CodeOcean</title><link href="http://localhost:4000/repeatability/2019/04/07/SReachTools-and-codeocean.html" rel="alternate" type="text/html" title="Using SReachTools on CodeOcean" /><published>2019-04-07T10:00:00-04:00</published><updated>2019-04-07T10:00:00-04:00</updated><id>http://localhost:4000/repeatability/2019/04/07/SReachTools-and-codeocean</id><content type="html" xml:base="http://localhost:4000/repeatability/2019/04/07/SReachTools-and-codeocean.html">&lt;p&gt;CodeOcean is a  cloud-based computational reproducibility platform. This post
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-04-19T01:04:12-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">SReachTools</title><subtitle>SReachTools: A MATLAB toolbox for stochastic reachability</subtitle><entry><title type="html">Using SReachTools on CodeOcean</title><link href="http://localhost:4000/repeatability/2019/04/07/SReachTools-and-codeocean.html" rel="alternate" type="text/html" title="Using SReachTools on CodeOcean" /><published>2019-04-07T10:00:00-04:00</published><updated>2019-04-07T10:00:00-04:00</updated><id>http://localhost:4000/repeatability/2019/04/07/SReachTools-and-codeocean</id><content type="html" xml:base="http://localhost:4000/repeatability/2019/04/07/SReachTools-and-codeocean.html">&lt;p&gt;CodeOcean is a  cloud-based computational reproducibility platform. This post
 shows how you can utilize SReachTools in your CodeOcean capsule for
 repeatability. We list few examples that show SReachTools setup for CodeOcean.
 Then, we detail the procedure to set up a new capsule.&lt;/p&gt;
@@ -36,14 +36,10 @@ and &lt;code class=&quot;highlighter-rouge&quot;&gt;make&lt;/code&gt;)&lt;/li&gt
     &lt;/ol&gt;
   &lt;/li&gt;
   &lt;li&gt;Next, copy the following text into &lt;code class=&quot;highlighter-rouge&quot;&gt;post-install script&lt;/code&gt; section:
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;c&quot;&gt;#!/usr/bin/env bash&lt;/span&gt;
-    
- &lt;span class=&quot;c&quot;&gt;# tells script to exit, if any line in the script fails (CodeOcean default)&lt;/span&gt;
- &lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt;
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
     
  &lt;span class=&quot;c&quot;&gt;### Install GMP&lt;/span&gt;
- &lt;span class=&quot;c&quot;&gt;# Requires packages build-essentials for gcc and make, and package m4 (don't&lt;/span&gt;
- &lt;span class=&quot;c&quot;&gt;# really know why)&lt;/span&gt;
+ &lt;span class=&quot;c&quot;&gt;# Requires packages build-essentials for gcc and make, and package m4 (don't know why)&lt;/span&gt;
  curl &lt;span class=&quot;nt&quot;&gt;-sL&lt;/span&gt; https://gmplib.org/download/gmp/gmp-6.1.2.tar.bz2 | &lt;span class=&quot;nb&quot;&gt;tar &lt;/span&gt;xj
  &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Downloaded GMP'&lt;/span&gt;
  &lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;gmp-6.1.2
@@ -86,21 +82,23 @@ and &lt;code class=&quot;highlighter-rouge&quot;&gt;make&lt;/code&gt;)&lt;/li&gt
  &lt;span class=&quot;c&quot;&gt;# Call srtinit in MATLAB to complete the setup&lt;/span&gt;
  &lt;span class=&quot;c&quot;&gt;## OPTION 1: Fetch a tagged release&lt;/span&gt;
  &lt;span class=&quot;c&quot;&gt;#&lt;/span&gt;
- &lt;span class=&quot;c&quot;&gt;# SREACHTOOLS_RELEASE=1.1&lt;/span&gt;
- &lt;span class=&quot;c&quot;&gt;# curl -sL https://abyvinod.github.io/code/SReachTools-v$SREACHTOOLS_RELEASE.tar.gz | tar xz&lt;/span&gt;
- &lt;span class=&quot;c&quot;&gt;# echo 'Downloaded SReachTools (stable)'&lt;/span&gt;
- &lt;span class=&quot;c&quot;&gt;# mv SReachTools-$SReachTools SReachTools&lt;/span&gt;
- &lt;span class=&quot;c&quot;&gt;#&lt;/span&gt;
- &lt;span class=&quot;c&quot;&gt;## OPTION 2: Fetch nightly&lt;/span&gt;
- &lt;span class=&quot;c&quot;&gt;#&lt;/span&gt;
- curl &lt;span class=&quot;nt&quot;&gt;-sL&lt;/span&gt; https://github.com/sreachtools/SReachTools/archive/master.zip &lt;span class=&quot;nt&quot;&gt;--output&lt;/span&gt; SReachTools.zip
- &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Downloaded SReachTools (nightly)'&lt;/span&gt;
+ &lt;span class=&quot;nv&quot;&gt;SREACHTOOLS_RELEASE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1.2
+ curl &lt;span class=&quot;nt&quot;&gt;-sL&lt;/span&gt; https://github.com/unm-hscl/SReachTools/archive/v&lt;span class=&quot;nv&quot;&gt;$SREACHTOOLS_RELEASE&lt;/span&gt;.zip &lt;span class=&quot;nt&quot;&gt;--output&lt;/span&gt; SReachTools.zip
  unzip &lt;span class=&quot;nt&quot;&gt;-qq&lt;/span&gt; SReachTools.zip
- &lt;span class=&quot;nb&quot;&gt;mv &lt;/span&gt;SReachTools-master SReachTools
+ &lt;span class=&quot;nb&quot;&gt;mv &lt;/span&gt;SReachTools-&lt;span class=&quot;nv&quot;&gt;$SREACHTOOLS_RELEASE&lt;/span&gt; SReachTools
  &lt;span class=&quot;nb&quot;&gt;rm &lt;/span&gt;SReachTools.zip
+ &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Downloaded SReachTools'&lt;/span&gt;
+ &lt;span class=&quot;c&quot;&gt;#&lt;/span&gt;
+ &lt;span class=&quot;c&quot;&gt;# ## OPTION 2: Fetch bleeding edge&lt;/span&gt;
+ &lt;span class=&quot;c&quot;&gt;#&lt;/span&gt;
+ &lt;span class=&quot;c&quot;&gt;# curl -sL https://github.com/unm-hscl/SReachTools/archive/master.zip --output SReachTools.zip&lt;/span&gt;
+ &lt;span class=&quot;c&quot;&gt;# unzip -qq SReachTools.zip&lt;/span&gt;
+ &lt;span class=&quot;c&quot;&gt;# mv SReachTools-master SReachTools&lt;/span&gt;
+ &lt;span class=&quot;c&quot;&gt;# rm SReachTools.zip&lt;/span&gt;
+ &lt;span class=&quot;c&quot;&gt;# echo 'Downloaded SReachTools'&lt;/span&gt;
     
  &lt;span class=&quot;c&quot;&gt;### Setup MATLAB env for GeoCalcLib, YALMIP, CVX, MPT3, and SReachTools&lt;/span&gt;
- &lt;span class=&quot;c&quot;&gt;# Trailing \ implies newline in bash. MATLAB executes the commands in the quotes&lt;/span&gt;
+ &lt;span class=&quot;c&quot;&gt;# Trailing \ implies newline in bash. MATLAB executes the commands in the quotes.&lt;/span&gt;
  &lt;span class=&quot;c&quot;&gt;# Make sure each line ends with ;\ to avoid MATLAB throwing errors&lt;/span&gt;
  &lt;span class=&quot;c&quot;&gt;# Use GPLK instead of LCP to avoid wierd shifting | Don't do mpt_init again&lt;/span&gt;
  &lt;span class=&quot;c&quot;&gt;# 1. Add GeoCalcLib to path&lt;/span&gt;
