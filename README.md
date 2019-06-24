@@ -1,6 +1,17 @@
-# Docs for SReachTools
+# Docs for SReachTools-website
 
-We use Github pages and Jekyll to power the documentation website for [SReachTools](https://unm-hscl.github.io/SReachTools/).
+We use Github pages and Jekyll to power the documentation website for
+[SReachTools](https://unm-hscl.github.io/SReachTools/).
+
+## Regenerate website
+
+Run docs2md to update the documentation folder. 
+
+By default, the website is assumed to be a child (titled `SReachTools-website`)
+of the parent folder of `srtinit --rootpath`. For example, if `srtinit
+--rootpath` returns `/myworkspace/SReachTools/`, then the website folder must be
+at `/myworkspace/SReachTools-website/`. Specify the path to the website folder
+as an argument, if this not the case.
 
 ## Installation for Ubuntu
 
