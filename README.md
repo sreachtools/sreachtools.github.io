@@ -5,13 +5,17 @@ We use Github pages and Jekyll to power the documentation website for
 
 ## Regenerate website
 
-Run docs2md to update the documentation folder. 
-
-By default, the website is assumed to be a child (titled `SReachTools-website`)
-of the parent folder of `srtinit --rootpath`. For example, if `srtinit
---rootpath` returns `/myworkspace/SReachTools/`, then the website folder must be
-at `/myworkspace/SReachTools-website/`. Specify the path to the website folder
-as an argument, if this not the case.
+1. When cloning the repository, make sure to do `git submodule update --init` to
+   download the website at `sreachtools.github.io` into the `_site` folder.
+1. Run docs2md to update the documentation folder. 
+    - By default, the website is assumed to be a child (titled
+      `SReachTools-website`) of the parent folder of `srtinit --rootpath`. 
+    - For example, if `srtinit --rootpath` returns `/myworkspace/SReachTools/`,
+      then the website folder must be at `/myworkspace/SReachTools-website/`.
+    - Specify the path to the website folder as an argument, if this not the
+      case.
+1. Change directory into the `_site` folder, which now has the updated website.
+1. Push the changes to the repository.
 
 ## Installation for Ubuntu
 

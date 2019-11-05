@@ -8,89 +8,59 @@
 
 
 <url>
-  <loc>https://sreachtools.github.io/</loc>
-  <lastmod>2019-04-21T03:41:51+00:00</lastmod>
+  <loc>https://unm-hscl.github.io/SReachTools/</loc>
+  <lastmod>2018-07-05T18:08:30+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://sreachtools.github.io/installation</loc>
-  <lastmod>2019-04-21T03:41:51+00:00</lastmod>
+  <loc>https://unm-hscl.github.io/SReachTools/examples/</loc>
+  <lastmod>2018-07-05T18:08:30+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://sreachtools.github.io/jekyll/update/2019/04/18/release-of-v1x2.html</loc>
-  <lastmod>2019-04-21T03:41:51+00:00</lastmod>
+  <loc>https://unm-hscl.github.io/SReachTools/contributing/</loc>
+  <lastmod>2018-07-05T18:08:30+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://sreachtools.github.io/repeatability/2019/04/07/SReachTools-and-codeocean.html</loc>
-  <lastmod>2019-04-21T03:41:51+00:00</lastmod>
+  <loc>https://unm-hscl.github.io/SReachTools/license/</loc>
+  <lastmod>2018-07-05T18:08:30+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://sreachtools.github.io/jekyll/update/2019/02/14/release-of-v1x10.html</loc>
-  <lastmod>2019-04-21T03:41:51+00:00</lastmod>
+  <loc>https://unm-hscl.github.io/SReachTools/jekyll/update/2018/05/31/release-of-v0x2.html</loc>
+  <lastmod>2018-07-05T18:08:30+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://sreachtools.github.io/blog/</loc>
-  <lastmod>2019-04-21T03:41:51+00:00</lastmod>
+  <loc>https://unm-hscl.github.io/SReachTools/jekyll/update/2018/05/25/release-of-v0x1.html</loc>
+  <lastmod>2018-07-05T18:08:30+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://sreachtools.github.io/long_description</loc>
-  <lastmod>2019-04-21T03:41:51+00:00</lastmod>
+  <loc>https://unm-hscl.github.io/SReachTools/examples/FtCVXUnderapproxVerifyCWH.html</loc>
+  <lastmod>2018-07-05T18:08:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://sreachtools.github.io/license/</loc>
-  <lastmod>2019-04-21T03:41:51+00:00</lastmod>
+  <loc>https://unm-hscl.github.io/SReachTools/examples/lagrangianApproximations.html</loc>
+  <lastmod>2018-07-05T18:08:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://sreachtools.github.io/contributing/</loc>
-  <lastmod>2019-04-21T03:41:51+00:00</lastmod>
+  <loc>https://unm-hscl.github.io/SReachTools/examples/doubleIntegratorDynamicProgramming.html</loc>
+  <lastmod>2018-07-05T18:08:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://sreachtools.github.io/docs/src/helperFunctions/qscmvnv/</loc>
-  <lastmod>2019-04-21T03:41:51+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://sreachtools.github.io/docs/src/helperFunctions/allcomb/</loc>
-  <lastmod>2019-04-21T03:41:51+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://sreachtools.github.io/docs/</loc>
-  <lastmod>2019-04-21T03:41:51+00:00</lastmod>
+  <loc>https://unm-hscl.github.io/SReachTools/examples/forwardStochasticReachCWH.html</loc>
+  <lastmod>2018-07-05T18:08:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://sreachtools.github.io/examples/publish/dubinsSReachSetGauss.html</loc>
-  <lastmod>2019-04-21T03:41:51+00:00</lastmod>
+  <loc>https://unm-hscl.github.io/SReachTools/examples/AutomatedAnesthesiaDelivery.html</loc>
+  <lastmod>2018-07-05T18:08:26+00:00</lastmod>
   <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://sreachtools.github.io/jekyll/update/2018/10/22/release-of-v1.html</loc>
-  <lastmod>2019-04-21T03:41:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://sreachtools.github.io/jekyll/update/2018/05/31/release-of-v0x2.html</loc>
-  <lastmod>2019-04-21T03:41:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://sreachtools.github.io/jekyll/update/2018/05/25/release-of-v0x1.html</loc>
-  <lastmod>2019-04-21T03:41:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://sreachtools.github.io/docs/index.html</loc>
-  <lastmod>2019-04-21T03:41:51+00:00</lastmod>
-  <priority>0.51</priority>
 </url>
 
 
