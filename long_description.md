@@ -14,10 +14,15 @@ For example, a typical **reach-avoid** constraint is to stay within a *safe set*
 to stay within the time horizon and reach a *target set* at the time horizon
 when starting from an initial state \\(\overline{x}\_0\\), as shown in the
 figure below.
-<div class="desc-figure">
+
+![](/assets/StochReachAvoidCartoon.jpeg){:style="margin: 0px auto" alt="A
+    cartoon depicting the stochastic reach-avoid problem"}
+{: style="text-align: center;"}
+<!-- <div class="desc-figure">
     <img src="{{ "/assets/StochReachAvoidCartoon.jpeg" | absolute_url }}" alt="A
     cartoon depicting the stochastic reach-avoid problem"/>
-</div>
+</div> -->
+
 Here, we would like to pick the *green* controller over the *red* controller and
 compute the collection, the *orange set*, of all initial states such that the
 probability of success (reach-avoid) \\(\mathbb{P}\\) is above a given threshold
@@ -44,10 +49,15 @@ synthesis for this problem.  Our solution techniques include:
    [^CDC2013_Lesser]<sup>,</sup>[^ACC2019_Voronoi], 
 1. Lagrangian (set-operations)[^CDC2017_Lagrangian], and
 1. dynamic programming[^Automatica_Abate]<sup>,</sup>[^Automatica_Summers]. 
-<div class="desc-figure">
+
+![](/assets/scalability.png){:style="margin: 0px auto" alt="A
+    cartoon depicting the stochastic reach-avoid problem"}
+{: style="text-align: center;"}
+<!-- <div class="desc-figure">
     <img src="{{ "/assets/scalability.png" | absolute_url }}" alt="Scalability
     of the various set computation techniques"/>
-</div>
+</div> -->
+
 The above figure shows how `SReachSet` scales in the stochastic reach set
 computation for a chain of integrator dynamics, in comparison with the dynamic
 programming approach. Among these techniques, Lagrangian and particle control
