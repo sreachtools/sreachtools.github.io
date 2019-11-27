@@ -35,12 +35,11 @@ title: SReachSetOptions.m
                                       polytope for the stochastic reach set
                                       A (sys.state_dim x n_dir)-dimensional
                                       matrix
-            2. init_safe_set_affine - [MUST HAVE] Affine constraints (if any) on
-                                      the initial state. Must include a
-                                      translate of the affine hull of the
-                                      set_of_dir_vecs | On intersection with the
-                                      safe set at t=0, it should result in a 2-D 
-                                      set
+            2. init_safe_set_affine - Affine constraints (if any) on the initial 
+                                      state. Must include any translate of the 
+                                      affine hull of the set_of_dir_vecs
+                                      [Default: Polyhedron(), which is 
+                                      interpreted as the entire R]
             3. verbose              - Verbosity of the implementation {0,1}
                                       [Default 0]
                                         0 - No output 
@@ -49,6 +48,7 @@ title: SReachSetOptions.m
                                             obtain xmax under study (maximizing
                                             the reach probability or the
                                             Chebyshev centering)
+                                      [Default 0]
             4. pwa_accuracy         - Accuracy of the piecewise affine
                                       overapproximation of the inverse of the
                                       standard normal cumulative density
@@ -66,13 +66,28 @@ title: SReachSetOptions.m
                                             t=0, that also admits an open-loop
                                             stochastic reach probability, above
                                             the prescribed probability
-                                            threshold.
+                                            threshold. This requires the
+                                            safe set at t=0 to be
+                                            full-dimensional
+                                      'mve' 
+                                          - Choose the anchor which is the 
+                                            maximum volume inscribed ellipsoid
+                                            of the safe set at t=0 | This does 
+                                            not require the safe set at t=0 to 
+                                            be full-dimensional | We also
+                                            use bisection to maximize the 
+                                            open-loop stochastic reach 
+                                            probability, above the prescribed 
+                                            probability threshold | This method
+                                            also uses an affine translation of
+                                            the provided direction vectors based
+                                            on the computed ellipsoid.
                                       'all'
                                           - The underapproximative set is
                                             computed via the convex hull of the
                                             union of the polytopes obtained from
                                             the methods above. This polytope
-                                            will have a maximum of twice the
+                                            will have a maximum of 3x the
                                             number of given direction vectors as
                                             vertices
   
@@ -82,11 +97,12 @@ title: SReachSetOptions.m
                                       maximum reach probability to identify the
                                       vertices of the underapproximative
                                       polytope for the stochastic reach set
-            2. init_safe_set_affine - [MUST HAVE] Affine constraints (if any) on
-                                      the initial state. Must include a
+            2. init_safe_set_affine - Affine constraints (if any) on
+                                      the initial state. Must include any
                                       translate of the affine hull of the
-                                      set_of_dir_vecs | On intersection with the
-                                      safe set, it should result in a 2-D set
+                                      set_of_dir_vecs
+                                      [Default: Polyhedron(), which is 
+                                      interpreted as the entire R]
             3. verbose              - Verbosity of the implementation {0,1}
                                         0 - No output 
                                         1 - Outputs the direction vector being

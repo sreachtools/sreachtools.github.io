@@ -87,12 +87,21 @@ title: SReachSetCcO.m
                         safe set at t=0, that also admits an open-loop 
                         stochastic reach probability, above the prescribed
                         probability threshold.
+    'mve'           --- Choose the anchor which is the maximum volume inscribed
+                        ellipsoid of the safe set at t=0 | This does not require
+                        the safe set at t=0 to be full-dimensional | We also use
+                        bisection to maximize the open-loop stochastic reach
+                        probability, above the prescribed probability threshold.
+                        This method also uses an affine translation of the
+                        provided direction vectors based on the computed
+                        ellipsoid.
   * SReachSetCcO also admits a options.compute_style = 'all' to perform the
     polytope computation from all of the above methods, and compute the convex
     hull of the union. This approach is also guaranteed to be an
     underapproximation, due to the convexity of the open-loop stochastic reach
-    set.  However, this approach can result in twice the number of direction
+    set.  However, this approach can result in much more number of direction
     vectors or vertices in the underapproximative polytope.
+  * If init_safe_set_affine = Polyhedron(), then we interpret it as R^n
   * See @LtiSystem/getConcatMats for more information about the
       notation used.
   
