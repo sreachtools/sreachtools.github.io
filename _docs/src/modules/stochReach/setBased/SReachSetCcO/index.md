@@ -41,9 +41,12 @@ title: SReachSetCcO.m
     polytope   - Underapproximative polytope of dimension sys.state_dim which
                  underapproximates the stochastic reach set
     extra_info - A list of Matlab structs that comprises of auxillary
-                 information from the set computation. It has two members
-                 extra_info_wmax and extra_info_cheby.  The individual structs
-                 contain the following information:
+                 information from the set computation. It has three
+                 members:
+                    1. extra_info_wmax,
+                    2. extra_info_cheby, and
+                    3. extra_info_mve. 
+                 The individual structs contain the following information:
                     1. xmax - Initial state that has the maximum reach
                               probability to stay with the safety tube using an
                               open-loop controller (via the method in use)
@@ -69,6 +72,8 @@ title: SReachSetCcO.m
                     7. vertices_underapprox_polytope
                             - Vertices of the polytope
                                 xmax + opt_theta_i * options.set_of_dir_vecs
+                 When the corresponding method is not invoked, the
+                 structure is an empty set.
  
   Notes:
   ------
