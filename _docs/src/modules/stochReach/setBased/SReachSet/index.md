@@ -154,9 +154,8 @@ title: SReachSet.m
                   See the docstring of SReachSetXXX for more details.
  
   Notes:
-  * 'set_of_dirs' and 'init_safe_set_affine' needs to be provided to the options
-    if 'chance-open' or 'genzps-open' is to be used. See SReachSetOptions() for
-    more details
+  * 'set_of_dirs' needs to be provided to the options if 'chance-open' or
+    'genzps-open' is to be used. See SReachSetOptions() for more details
   * See @LtiSystem/getConcatMats for more information about the notation used.
   * For lagrangian underapproximation approach, see getSReachLagUnderapprox.
       - From computational geometry, intersections and Minkowski differences are

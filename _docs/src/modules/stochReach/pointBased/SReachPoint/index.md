@@ -237,9 +237,9 @@ title: SReachPoint.m
                   undersampling used for tractable particle control approach
  
   Notes:
-  * SReachPoint() will call SReachPointOptions() internally if
-        SReachPointOptions()-based options is not explicitly provided to
-        SReachPoint(). This will set the algorithm to default options.
+  * SReachPoint() will call SReachPointOptions() internally if an explict
+    options struct created using SReachPointOptions() is not provided. In this
+    case, SReachPoint() uses default options listed in SReachPointOptions.
   * 'chance-affine' and 'chance-affine-uni' requires an explicit declaration of 
     the options from SReachPointOptions() to specify the threshold on the 
     chance-constraint relaxation of the input bounds.
