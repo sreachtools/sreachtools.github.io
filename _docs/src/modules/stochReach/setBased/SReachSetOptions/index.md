@@ -28,13 +28,13 @@ title: SReachSetOptions.m
   
         'chance-open' : Convex chance-constrained approach for an open-loop 
                         controller synthesis
-            1. set_of_dir_vecs      - [MUST HAVE] Set of direction vectors shot
-                                      outwards from the initial state with
-                                      maximum reach probability to identify the
-                                      vertices of the underapproximative
-                                      polytope for the stochastic reach set
-                                      A (sys.state_dim x n_dir)-dimensional
-                                      matrix
+            1. set_of_dir_vecs      - [MUST HAVE/See notes] Set of direction
+                                      vectors shot outwards from the initial
+                                      state with maximum reach probability to
+                                      identify the vertices of the
+                                      underapproximative polytope for the
+                                      stochastic reach set 
+                                      (sys.state_dim x n_dir)-dimensional matrix
             2. init_safe_set_affine - Affine constraints (if any) on the initial 
                                       state. Must include any translate of the 
                                       affine hull of the set_of_dir_vecs
@@ -92,11 +92,12 @@ title: SReachSetOptions.m
                                             vertices
   
         'genzps-open' : Genz's algorithm + Patternsearch
-            1. set_of_dir_vecs      - [MUST HAVE] Set of direction vectors shot
-                                      outwards from the initial state with
-                                      maximum reach probability to identify the
-                                      vertices of the underapproximative
-                                      polytope for the stochastic reach set
+            1. set_of_dir_vecs      - [MUST HAVE/See notes] Set of direction
+                                      vectors shot outwards from the initial
+                                      state with maximum reach probability to
+                                      identify the vertices of the
+                                      underapproximative polytope for the
+                                      stochastic reach set
             2. init_safe_set_affine - Affine constraints (if any) on
                                       the initial state. Must include any
                                       translate of the affine hull of the
@@ -207,6 +208,8 @@ title: SReachSetOptions.m
  
   Notes:
   * Requires set_of_dir_vecs for the methods 'chance-open' and 'genzps-open'.
+        - If set_of_dir_vecs is not provided, then the maximum of the optimal
+          safety probability is returned via extra_info
   * Requires load_str for the method lag-under with bound_set_method 'load'
   * Requires template_polytope for the method lag-under with
     bound_set_method 'polytope'

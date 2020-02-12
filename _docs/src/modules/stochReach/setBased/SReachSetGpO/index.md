@@ -125,6 +125,9 @@ title: SReachSetGpO.m
     yield an underapproximation. For higher desired_accuracy, the result may be
     more conservative but faster. For lower desired_accuracy, the result may
     take more time.
+  * If init_safe_set_affine = Polyhedron(), then we interpret it as R^n
+  * If set_of_dir_vecs is empty, then the maximum of the optimal safety
+    probability is returned via extra_info.
   * See @LtiSystem/getConcatMats for more information about the
       notation used.
  
