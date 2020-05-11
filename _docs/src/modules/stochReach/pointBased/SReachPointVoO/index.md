@@ -103,6 +103,9 @@ title: SReachPointVoO.m
   Notes:
   * This function requires CVX with Gurobi as the backend solver for optimizing
     the resulting mixed-integer linear program.
+  * Gurobi has been abandoned due to issues arising with its interface with CVX.
+    See http://ask.cvxr.com/t/cvx-with-gurobi-error-warning/7072 for more
+    details.
   * This function requires kmeans function which is part of MATLAB's
     Statistical and Machine Learning toolbox.
   * See @LtiSystem/getConcatMats for more information about the notation used.

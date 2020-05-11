@@ -15,7 +15,7 @@ A new version of SReachTools is out! Check out
     - We have rerun all examples and have added tests
 - Documentation has been moved to a separate repository [https://github.com/sreachtools/sreachtools-website](https://github.com/sreachtools/sreachtools-website).
 - Minor bug fixes on output control and covariance sanitization.
-- In addition, this version is now participated in repeatability
+- In addition, this version participated in repeatability
     - HSCC 2019
     - ARCH 2019
     - [CodeOcean capsules](https://codeocean.com/explore/capsules/?query=sreachtools)

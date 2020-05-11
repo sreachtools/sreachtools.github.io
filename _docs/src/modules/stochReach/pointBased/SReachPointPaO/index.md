@@ -58,8 +58,11 @@ title: SReachPointPaO.m
   See also SReachPoint.
  
   Notes:
-  * This function requires CVX with Gurobi as the backend solver for optimizing
+  * This function requires CVX with Mosek as the backend solver for optimizing
     the resulting mixed-integer linear program.
+  * Gurobi has been abandoned due to issues arising with its interface with CVX.
+    See http://ask.cvxr.com/t/cvx-with-gurobi-error-warning/7072 for more
+    details.
   * See @LtiSystem/getConcatMats for more information about the notation used.
   
   ============================================================================
