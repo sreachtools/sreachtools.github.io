@@ -90,7 +90,7 @@ Of course, we welcome contributions. See [Contributing guidelines](contributing/
 ## Credits
 
 The authors of this toolbox are [Abraham P. Vinod](https://abyvinod.github.io/)
-and [Joseph D.  Gleason](http://www.unm.edu/~gleasonj/). The authors are PhD
+and [Joseph D.  Gleason](https://www.linkedin.com/in/joseph-d-gleason/). The authors are PhD
 advisees of [Prof. Meeko Oishi](http://www.unm.edu/~oishi/).  SReachTools
 leverages several existing toolboxes and third-party codes:
 1. [MPT3](https://www.mpt3.org/) developed by M. Herceg, M. Kvasnica, C.N.
